@@ -1,0 +1,22 @@
+package vetor;
+import java.util.Scanner;
+
+public class ExemploTeste {
+
+	public static void main(String[] args) {
+		Scanner lerScannner = new Scanner(System.in);
+
+		int vet[] = new int[10];
+		int pares = 0, primo, i, total=0;
+		Scanner lerScanner = new Scanner(System.in);
+		for (i = 0; i < 10; i++) {
+			System.out.println("Informe um número");
+			vet[i] = lerScanner.nextInt();
+
+		} if (vet[i] % 2 == 0) {  
+	                total += vet[i];
+	                System.out.println("O total é: "+total);
+		}
+	}
+
+}

@@ -1,0 +1,19 @@
+package objeto;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		
+		Gato gato1 = new Gato();
+		Gato gato2 = new Gato();
+
+		gato1.setNome("Lolinha ");
+		gato2.setNome("Lulu ");
+		
+		gato2.miar();
+		
+		System.out.println("Nome: " + gato1.getNome() + gato1.getIdade());
+		System.out.println("Nome: " + gato2.getNome()+ gato2.getCorString());
+	}
+
+}

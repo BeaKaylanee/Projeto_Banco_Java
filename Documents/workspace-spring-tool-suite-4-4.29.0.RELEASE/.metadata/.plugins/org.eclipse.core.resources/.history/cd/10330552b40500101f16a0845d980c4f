@@ -1,0 +1,27 @@
+package exercicios3;
+
+import java.util.Scanner;
+
+public class LacoFor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner lerScannner = new Scanner (System.in);
+		
+		
+		
+		for (int cont = 1; cont <= 10; cont++) {
+			System.out.println("Informe um número: ");
+			int numero= lerScannner.nextInt();
+			
+			 String par = (numero % 2 == 0) ? "par" : "ímpar";
+		     String sinal = (numero >= 0) ? "positivo" : "negativo";
+		        
+		        System.out.println("Número " + numero + " é " + par + " e " + sinal + "!");
+		        		 
+		       lerScannner.close();
+		}
+	}
+
+}

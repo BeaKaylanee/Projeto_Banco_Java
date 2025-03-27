@@ -1,0 +1,32 @@
+package collections2;
+
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class Fila {
+
+	public static void main(String[] args) {
+		
+		LinkedList<String> fila = new LinkedList<String>();
+		
+		System.out.println("Conteudo na fila: ");
+		fila.add("Yago");
+		Collections.addAll(fila,"Beatriz", "Fabiana", "Davi");
+		
+		System.out.println(fila);
+		
+		fila.add("Laura");
+		System.out.println(fila);
+		
+		System.out.println("\nRemover elemento: " + fila.remove());
+		System.out.println(fila);
+		
+		System.out.println("\nExibir Primeiro elemento da fila: " + fila.peek());
+		
+		System.out.println(fila);
+		
+
+		System.out.println("\nExibir o Tamanho da fila: " + fila.size());
+	}
+
+}

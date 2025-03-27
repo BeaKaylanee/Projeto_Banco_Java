@@ -1,0 +1,12 @@
+package objeto;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		
+		Gato gato1 = new Gato();
+
+		gato1.miar();
+	}
+
+}

@@ -1,0 +1,30 @@
+package colection;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class ExemploTeste {
+
+	public static void main(String[] args) {
+		Scanner lerScanner = new Scanner(System.in);
+
+		//Integer nroConta = 12345;
+
+		System.out.print("Digite o número da conta: ");
+		Integer nroConta = lerScanner.nextInt();
+		Object conta = new Object();
+
+		Map<Integer, Object> listaConta = new HashMap<>();
+		listaConta.put(nroConta, conta);
+
+		Object contaEncontrada = listaConta.get(12345);
+		if (contaEncontrada != null) {
+			System.out.println("Conta encontrada com sucesso! :)");
+		} else {
+			System.out.println("Conta não encontrada :(");
+		}
+	     lerScanner.close(); 
+	}
+
+}

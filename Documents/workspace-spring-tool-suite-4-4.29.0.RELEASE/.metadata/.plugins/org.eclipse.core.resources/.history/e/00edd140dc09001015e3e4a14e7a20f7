@@ -1,0 +1,29 @@
+package exercicios6;
+
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class CollectionsEx {
+
+	public static void main(String[] args) {
+		Scanner lerSacanner = new Scanner(System.in);
+		LinkedList<String> nomes = new LinkedList<String>();
+
+		System.out.println("_________________________________");
+		System.out.println("1 - Adicionar cliente na fila");
+		System.out.println("2 - Listar todos os clientes");
+		System.out.println("3 - Retirar cliente da fila");
+		System.out.println("0 - Sair ");
+		System.out.println("_________________________________");
+		
+		System.out.println("Entre com a opção desejada: ");
+		int opcao = lerSacanner.nextInt();
+		
+		if (opcao == 1) {
+			System.out.println("\nDigite o nome:" + nomes.add(""));
+			String nome = lerSacanner.next();
+			System.out.println("\nExibir a Fila atualizada: " + nomes);
+		}
+	}
+
+}

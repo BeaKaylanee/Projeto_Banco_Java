@@ -1,0 +1,25 @@
+package lacosrepeticao;
+
+import java.util.Scanner;
+
+public class For {
+
+	public static void main(String[] args) {
+
+		Scanner lerScannner = new Scanner (System.in);
+		
+		System.out.println("Informe o número no qual queira visualizar a tabuada: ");
+		int num = lerScannner.nextInt();
+		
+		
+		System.out.println("Informe o número para inicio da tabuada: ");
+		int cont2 = lerScannner.nextInt();
+		
+		
+		for (int cont = cont2; cont <= 10; cont++) {
+			 int resul = num * cont;
+			System.out.println(num + " x " + cont + " = " + resul);
+		}
+	}
+
+}

@@ -1,0 +1,31 @@
+package lacosrepeticao;
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		 
+		Scanner lerScannner = new Scanner (System.in);
+		
+		String  usuarioCorreto = "admin";
+		String  senhaCorreta= "12345";
+		boolean novaTentativa = false;
+		
+		
+		do {
+			
+			System.out.print("Digite o nome de usuário: ");
+            String usuario = lerScannner.nextLine();
+ 
+            System.out.print("Digite a senha: ");
+            String senha = lerScannner.nextLine();
+            
+            if (usuario.equals(usuarioCorreto) && senha.equals(senhaCorreta)) {
+				System.out.println("Autenticação bem sucedida! Bem-vindo(a) ");
+			}
+			
+		} while (novaTentativa);
+	}
+
+}

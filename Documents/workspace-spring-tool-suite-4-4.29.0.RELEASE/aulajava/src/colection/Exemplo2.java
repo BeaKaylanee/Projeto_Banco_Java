@@ -1,0 +1,55 @@
+package colection;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Exemplo2 {
+
+	public static void main(String[] args) {
+		Scanner lerScanner = new Scanner(System.in);
+		boolean continua = true; 
+		
+		HashSet<Integer> setNumeros = new HashSet<>();
+		setNumeros.add(2);
+		setNumeros.add(5);
+		setNumeros.add(1);
+		setNumeros.add(3);
+		setNumeros.add(4);
+		setNumeros.add(9);
+		setNumeros.add(7);
+		setNumeros.add(8);
+		setNumeros.add(10);
+		setNumeros.add(6);
+		
+		Map<Integer, Integer> mapaNumeros = new HashMap<>();
+		for (Integer num : setNumeros) {
+			mapaNumeros.put(num, num);
+		}
+
+		 while (continua) {
+	            System.out.print("\nDigite o número que você deseja encontrar: ");
+	            int numero = lerScanner.nextInt();
+	            
+	            if (mapaNumeros.containsKey(numero)) {
+	                System.out.println("O número " + numero + " foi encontrado!\n");
+	            } else {
+	                System.out.println("O número " + numero + " não foi encontrado\n");
+	        		System.out.println("\nDados da Collection: " + setNumeros);
+	            }
+
+	            System.out.print("Deseja informar outro número? (s/n): ");
+	            String resposta = lerScanner.next().toUpperCase();
+
+	            if (!resposta.equals("S")) {
+	                continua = false;
+	                System.out.println("Busca finalizada...");
+	            }
+	        }
+
+	        lerScanner.close(); 
+
+	}
+
+}

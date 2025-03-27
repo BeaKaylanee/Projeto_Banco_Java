@@ -1,0 +1,24 @@
+package exercicios3;
+
+import java.util.Scanner;
+
+public class LacoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner lerScannner = new Scanner(System.in);
+		boolean novaTentativa = false;
+		do {
+			System.out.print("Informe uma idade: ");
+			int idade = lerScannner.nextInt();
+			
+			if (novaTentativa) {
+				
+			}else {
+				System.out.print("Deseja informar outra idade? (s/n): ");
+				String continua = lerScannner.next().toUpperCase();
+			}
+		} while (novaTentativa);
+	}
+
+}

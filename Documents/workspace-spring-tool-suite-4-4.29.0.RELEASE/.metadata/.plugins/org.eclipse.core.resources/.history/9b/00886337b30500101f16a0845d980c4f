@@ -1,0 +1,31 @@
+package exercicios3;
+
+import java.util.Scanner;
+
+public class LacoFor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner lerScannner = new Scanner (System.in);
+		
+		/*System.out.println("Informe um número: ");
+		int numero1 = lerScannner.nextInt();
+		
+		System.out.println("Informe um segundo número: ");
+		int numero2 = lerScannner.nextInt();*/
+		
+		
+		System.out.println("Informe o número para inicio: ");
+		int cont2 = lerScannner.nextInt();
+		
+		
+		for (int cont = cont2; cont <= 10; cont++) {
+			// int resul = cont2 + cont;
+			System.out.println("Informe um número: ");
+			int numero= lerScannner.nextInt();
+			System.out.println(numero);
+		}
+	}
+
+}

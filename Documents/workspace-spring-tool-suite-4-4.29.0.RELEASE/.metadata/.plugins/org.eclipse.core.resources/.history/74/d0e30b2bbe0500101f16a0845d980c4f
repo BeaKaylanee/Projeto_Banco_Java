@@ -1,0 +1,36 @@
+package exercicios3;
+
+import java.util.Scanner;
+
+public class LacoWhile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner lerScannner = new Scanner(System.in);
+		boolean novaTentativa;
+        int count = 0;
+        int count1 = 0;
+
+        do {
+            System.out.print("Informe uma idade: ");
+            int idade = lerScannner.nextInt();
+            
+            if (idade < 21) {
+                count++;
+            } else if (idade > 50) {
+                count1++;
+            }
+
+            System.out.print("Deseja informar outra idade? (s/n): ");
+            String continua = lerScannner.next().toUpperCase();
+            novaTentativa = continua.equals("S");
+
+        } while (novaTentativa);
+
+        System.out.println("\nTotal menores de 21: " + count);
+        System.out.println("Total maiores de 50: " + count1);
+
+        lerScannner.close();
+	}
+
+}

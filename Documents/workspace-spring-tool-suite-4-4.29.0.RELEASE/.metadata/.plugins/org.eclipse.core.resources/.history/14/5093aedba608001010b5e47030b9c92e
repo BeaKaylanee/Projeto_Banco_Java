@@ -1,0 +1,28 @@
+package colection;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class ListEx {
+
+	public static void main(String[] args) {
+
+		Scanner lerScanner = new Scanner(System.in);
+		ArrayList<Double> notas = new ArrayList<Double>();
+
+		System.out.println("Digite primeira nota: ");
+		notas.add(lerScanner.nextDouble());
+
+		notas.add(7.0);
+		notas.add(6.0);
+
+		System.out.println(notas);
+
+		for (Double nota : notas) {
+			System.out.println(nota);
+
+		}
+	}
+
+}
