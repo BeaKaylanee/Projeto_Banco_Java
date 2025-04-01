@@ -1,0 +1,48 @@
+package herancapolimorfismo;
+
+public class Carro extends Transporte {
+
+	private int roda;
+	private String placa;
+	private String chassi;
+
+	public Carro(String marca, int capacidade, int velocidade, int roda, String placa, String chassi) {
+		super(marca, capacidade, velocidade);
+		this.roda = roda;
+		this.placa = placa;
+		this.chassi = chassi;
+	}
+
+	public int getRoda() {
+		return roda;
+	}
+
+	public void setRoda(int roda) {
+		this.roda = roda;
+	}
+
+	public String getPlaca() {
+		return placa;
+	}
+
+	public void setPlaca(String placa) {
+		this.placa = placa;
+	}
+
+	public String getChassi() {
+		return chassi;
+	}
+
+	public void setChassi(String chassi) {
+		this.chassi = chassi;
+	}
+
+	public void visualizar() {
+		super.visualizar();
+		System.out.println("Roda: " + this.roda);
+		System.out.println("Número da placa: " + this.placa);
+		System.out.println("Chassi: " + this.chassi);
+		
+	}
+
+}

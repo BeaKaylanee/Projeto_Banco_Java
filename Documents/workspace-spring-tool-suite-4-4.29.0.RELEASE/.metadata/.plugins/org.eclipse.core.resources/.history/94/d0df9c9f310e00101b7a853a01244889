@@ -1,0 +1,14 @@
+package interfacepolimorfismo;
+
+public class Carrinho implements ControleRemoto{
+
+	@Override
+	public void mover() {
+		System.out.println("O carrinho esta andando: ");
+	}
+	
+	@Override
+	public void mover(int velocidade) {
+		System.out.println("O carrinho esta andando a " + velocidade + "km/h.");
+	}
+}

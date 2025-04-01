@@ -1,0 +1,13 @@
+package herancapolimorfismo;
+
+public class Menu {
+
+	public static void main(String[] args) {
+
+		
+		Carro carro = new Carro("Celta", 5, 200, 18, "POO0-081", "f126tevghdvdjsvf");
+		Barco barco = new Barco("Ferrari", 2, 300, "Deslocamento", false);
+	
+	}
+
+}

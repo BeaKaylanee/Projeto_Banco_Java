@@ -1,0 +1,14 @@
+package interfacepolimorfismo;
+
+public class MenoControleRemoto {
+
+	public static void main(String[] args) {
+
+		Carrinho carrinho = new Carrinho();
+		Sapinho sapinho = new Sapinho();
+
+		carrinho.mover();
+		sapinho.mover();
+	}
+
+}
